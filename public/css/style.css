@@ -12,14 +12,23 @@ body {
 
 .header-text {
     text-align: center;
+
 }
 
 .main-header-top-bar {
-    border: 1px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.header-img-form {
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: space-between;
 }
 
 .img-logo {
-    width: 100%;
+    width: 90%;
     height: 75px;
 }
 
@@ -61,25 +70,25 @@ body {
 }
 
 .search {
-    display: flex;
-    flex-direction: row;
+    width: 90%;
 }
 
 .search-bar {
     text-decoration-color: #ebebeb;
-    width: 90%;
+    width: 75%;
     align-items: center;
     border: 1px;
-    border-radius: 6px;
+    border-radius: 6px 0px 0px 6px;
     padding: 5px;
-    margin-right: 5px;
+
 }
 
 .search button {
     background-color: white;
     border: 1px;
-    border-radius: 6px;
+    border-radius: 0px 6px 6px 0px;
     padding: 5px;
+    width: 20%;
 }
 
 .navbar {
@@ -101,7 +110,8 @@ main {
 /* Banner Mobile */
 
 .img-banner {
-    display: none;
+    width: 100vw;
+
 }
 
 /* Products Mobile */
@@ -234,7 +244,6 @@ p.discount {
 
 .form-selection label {
     font-size: 18px;
-
 }
 
 .form input {
@@ -258,7 +267,6 @@ p.discount {
 .form-photo input {
     border-radius: 6px;
     height: 30px;
-    width: 50vw;
 }
 
 .register {
@@ -340,6 +348,26 @@ footer {
         box-shadow: 0px 0px 10px rgb(100 100 100);
         transition: all 450ms;
     }
+
+    /* Diseño 2 columnas tablet productos */
+
+    .section-products {
+        width: 90%;
+        background-color: #ebebeb;
+        margin: auto;
+        padding-bottom: 15px;
+        padding-top: 15px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+
+    .article-products {
+        width: 48%;
+        background-color: white;
+        margin-right: 2%;
+    }
 }
 
 /* Navegación en Desktop */
@@ -348,7 +376,15 @@ footer {
     /* Cambios Header Desktop */
     .main-header-top-bar {
         display: flex;
-        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header-img-form {
+        display: flex;
+        width: 85%;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
         align-items: center;
     }
 
@@ -358,7 +394,7 @@ footer {
     }
 
     .img-logo {
-        width: 15vw;
+        width: 60%;
     }
 
     .login-bar ul {
@@ -382,11 +418,16 @@ footer {
     }
 
     .search {
-        width: 70%;
-        height: 100%;
+        width: 50%;
+        height: 50px;
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    .search button {
+        width: 5%;
+        padding-right: 25px
     }
 
     .login-bar {
@@ -410,6 +451,7 @@ footer {
     .header-text {
         text-align: right;
         font-size: 18px;
+        width: 15%;
     }
 
     /* Banner Desktop */
@@ -432,6 +474,7 @@ footer {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        flex-wrap: nowrap;
     }
 
     .article-products:hover .shipping {
@@ -445,7 +488,7 @@ footer {
         border-radius: 6px;
         border: solid #666 0.5px;
         height: 25px;
-        width: 30vw;
+        width: 30%;
     }
 
     /* Footer Desktop */

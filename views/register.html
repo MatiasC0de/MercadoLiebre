@@ -15,14 +15,17 @@
     <!-- Cabecera de la Página -->
     <header class="main-header">
         <div class="main-header-top-bar">
-            <a href="/"><img class="img-logo" src="/images/logo-mercado-liebre.svg" alt="logo-mercado-liebre"></a>
-            <p class="search">
-                <input class="search-bar" type="search" action="/productos" method="POST" name="busquedapruductos"
-                    placeholder="Buscar productos, marcas...">
-                <button><i class="fas fa-search"></i></button></p>
+            <div class="header-img-form">
+                <a href="/"><img class="img-logo" src="/images/logo-mercado-liebre.svg" alt="logo-mercado-liebre"></a>
+                <p class="search">
+                    <input class="search-bar" type="search" action="/productos" method="POST" name="busquedapruductos"
+                        placeholder="Buscar productos, marcas...">
+                    <button><i class="fas fa-search"></i></button></p>
+            </div>
             <p class="header-text"><i class="fas fa-hand-holding-usd"></i>
                 Comprá en cuotas y sin tarjeta de crédito</p>
         </div>
+
 
 
         <nav class="navbar">
@@ -34,7 +37,7 @@
             </ul>
             <ul class="login-bar">
                 <li><a href="/register">Creá tu cuenta<i class="far fa-id-card"></i></a></li>
-                <li><a href="login">Ingresá<i class="fas fa-sign-in-alt"></i></a></li>
+                <li><a href="/login">Ingresá<i class="fas fa-sign-in-alt"></i></a></li>
                 <li><a href="">Mis compras</a><i class="fas fa-shopping-basket"></i></li>
             </ul>
         </nav>
@@ -42,6 +45,7 @@
             <i class="fas fa-bars"></i>
         </div>
     </header>
+
     <main>
         <div class="register">
             <form name="register" action="" method="POST" class="form-register">
